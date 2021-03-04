@@ -63,7 +63,7 @@ base_dir="$( cd -P "$( dirname "${source_name}" )" && pwd )"
 cd "${base_dir}"
 
 # envirionment
-product_name="wrapper-tomcat"
+product_name="wrapper-single"
 product_version="3.5.43.7"
 project_name="wrapper"
 registrys=(

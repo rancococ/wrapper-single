@@ -62,12 +62,11 @@ base_dir="$( cd -P "$( dirname "${source_name}" )" && pwd )"
 cd "${base_dir}"
 
 # envirionment
-product_name="wrapper-tomcat"
+product_name="wrapper-single"
 product_version="3.5.43.7"
 product_platform="linux"
 product_arch="x86_64"
 jre_version="1.8.192"
-tomcat_version="8.5.57"
 wrapper_version="3.5.43.7"
 serverjre="server-jre-8u192-linux-x64.tar.gz"
 build_name="$(cat /proc/sys/kernel/random/uuid)"
@@ -172,7 +171,6 @@ fun_execute_build_command() {
     info "generate version info"
     touch ${build_home}/${product_name}/bin/version
     echo "jre:${jre_version}"          >> ${build_home}/${product_name}/bin/version
-    echo "tomcat:${tomcat_version}"    >> ${build_home}/${product_name}/bin/version
     echo "wrapper:${wrapper_version}"  >> ${build_home}/${product_name}/bin/version
 
     info "change file permissions"

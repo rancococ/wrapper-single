@@ -63,12 +63,12 @@ base_dir="$( cd -P "$( dirname "${source_name}" )" && pwd )"
 cd "${base_dir}"
 
 # envirionment
-product_name="wrapper-tomcat"
+product_name="wrapper-single"
 product_version="3.5.43.7"
 product_platform="compose"
 product_arch="x86_64"
 images=(
-registry.cdjdgm.com/wrapper/wrapper-tomcat:3.5.43.7-centos
+registry.cdjdgm.com/wrapper/wrapper-single:3.5.43.7-centos
 )
 build_name="$(cat /proc/sys/kernel/random/uuid)"
 build_home="/tmp/${build_name}"
